@@ -7,15 +7,22 @@ body {
 .col {
     font-weight: lighter;
 }
-.col header {
-    background-color: #00bfff;
-}
-
-.col footer {
+.col h2 {
     background-color: #00bfff;
 }
 
 #row-cols-1 {
 padding-left: 8%;
 padding-right: 8%;
+}
+
+.card {
+    background-color: #00bfff;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+form {
+    padding-left: 8%;
+    padding-right: 8%;
 }

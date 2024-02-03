@@ -19,28 +19,27 @@
 </head>
 
 <body>
-    <header>
-        <div id="carouselExampleFade" class="carousel slide carousel-fade">
-            <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary px-5">
-                <div class="container-fluid">
-                    <img src="assets/img/viajes.svg" width="30rem" alt="logo">
-                    <a class="navbar-brand" href="#">Viajes Chile</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="nav-link" href="#">inicio</a>
-                            <a class="nav-link" href="#">Quienes Somos</a>
-                            <a class="nav-link" href="#">Destacados</a>
-                            <a class="nav-link" href="#">Contacto</a>
-                        </div>
-                    </div>
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary px-5">
+        <div class="container-fluid">
+            <img src="assets/img/viajes.svg" width="30rem" alt="logo">
+            <a class="navbar-brand" href="#">Viajes Chile</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto nav_menu_collapse">
+                    <a class="nav-link active" href="#inicio">inicio<span class="sr-only">(current) </span></a>
+                    <a class="nav-link" href="#quienes">Quienes Somos</a>
+                    <a class="nav-link" href="#destacados">Destacados</a>
+                    <a class="nav-link" href="#contacto">Contacto</a>
                 </div>
-            </nav>
+            </div>
+        </div>
+    </nav>
 
+    <header id="inicio">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
             <!--imagenes carrusel-->
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -66,74 +65,110 @@
         </div>
     </header>
 
-    <!--Información Quienes Somos-->
-    <section>
+    <!--Información Quienes Somos, en pantallas sm hacia abajo desaparecera-->
+    <section class="pt-5 d-none d-sm-none d-md-block bg-black" id="quienes">
         <div class="h1 p-5 pb-5 mb-4 text-center">
             ¿Quienes Somos?
         </div>
 
-         <!--Columnas-->
+        <!--Columnas-->
 
-        <div class="container text-center pt-5 border-top border-color-rgb
-        ">
-            <div class="row align-items-start">
-              <div class="col">
-                <header><i class="fa-solid fa-plane"></i></header>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt libero quaerat repellendus vel inventore corporis fugiat, vitae, eum est aliquam eligendi fugit omnis quas perspiciatis eveniet suscipit blanditiis ipsa nihil?
-              </div>
-              <div class="col">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut iusto odio, et dolorum ullam totam? Quis quisquam ullam cumque quas labore, nisi obcaecati, voluptates dolore corporis sed libero, alias praesentium?
-                <footer><i class="fa-solid fa-mountain"></i></footer>
-              </div>
-              <div class="col">
-                <header><i class="fa-solid fa-route"></i></header>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae animi unde sunt eligendi, non quibusdam enim mollitia doloribus expedita aliquid nemo esse. Qui in exercitationem veritatis quam accusantium. Facilis, nesciunt!
-              </div>
+        <div class="container text-center pt-5 border-top">
+            <div class="row pt-5 pb-5 align-items-start">
+                <div class="col">
+                    <h2><i class="fa-solid fa-plane"></i></h2>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt libero quaerat repellendus vel
+                    inventore corporis fugiat, vitae, eum est aliquam eligendi fugit omnis quas perspiciatis eveniet
+                    suscipit blanditiis ipsa nihil?
+                </div>
+                <div class="col">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut iusto odio, et dolorum ullam totam? Quis
+                    quisquam ullam cumque quas labore, nisi obcaecati, voluptates dolore corporis sed libero, alias
+                    praesentium ipsa nihil?
+                    <h2><i class="fa-solid fa-mountain"></i></h2>
+                </div>
+                <div class="col">
+                    <h2><i class="fa-solid fa-route"></i></h2>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae animi unde sunt eligendi, non
+                    quibusdam enim mollitia doloribus expedita aliquid nemo esse. Qui in exercitationem veritatis quam
+                    accusantium. Facilis, nesciunt!
+                </div>
             </div>
-          </div>
+        </div>
     </section>
 
     <!--Destacados-->
-    <section>
-        <div class="h1 p-5 mb-4 text-center">
+    <section id="destacados">
+        <div class="h1 pt-5 mb-4 text-center">
             Destacados
         </div>
 
-        <div class="row row-cols-1 row-cols-md-4 g-4" id="row-cols-1">
+        <div class="container-fluid row row-cols-1 row-cols-md-4 g-4 pt-3 pb-5" id="row-cols-1">
             <div class="col">
-              <div class="card">
-                <img src="assets/img/card1.jpg" class="card-img-top" height="200rem" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse sequi laboriosam alias fuga, sit sint! Rem minima, facere molestias repellat blanditiis quas velit. Dolore voluptas nostrum quo earum molestias fugiat.</p>
+                <div class="card">
+                    <img src="assets/img/card1.jpg" class="card-img-top" height="200rem" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse sequi
+                            laboriosam alias fuga, sit sint! Rem minima, facere molestias repellat blanditiis quas
+                            velit. Dolore voluptas nostrum quo earum molestias fugiat.</p>
+                    </div>
                 </div>
-              </div>
             </div>
             <div class="col">
-              <div class="card">
-                <img src="assets/img/card2.jpg" class="card-img-top" height="200rem" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dignissimos maiores, fugit vitae nostrum illum tempora odit aliquid necessitatibus ipsum, enim nemo id cum, optio iste ut dolore minus debitis!</p>
+                <div class="card">
+                    <img src="assets/img/card2.jpg" class="card-img-top" height="200rem" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dignissimos
+                            maiores, fugit vitae nostrum illum tempora odit aliquid necessitatibus ipsum, enim nemo id
+                            cum, optio iste ut dolore minus debitis! Facere minus quisquam</p>
+                    </div>
                 </div>
-              </div>
             </div>
             <div class="col">
-              <div class="card">
-                <img src="assets/img/card3.jpg" class="card-img-top" height="200rem" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non dolor eos expedita natus consequuntur, cum sunt architecto ipsum beatae impedit, amet porro maiores ratione error obcaecati. Facere minus quisquam ex!</p>
+                <div class="card">
+                    <img src="assets/img/card3.jpg" class="card-img-top" height="200rem" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non dolor eos
+                            expedita natus consequuntur, cum sunt architecto ipsum beatae impedit, amet porro maiores
+                            ratione error obcaecati. Facere minus quisquam ex!</p>
+                    </div>
                 </div>
-              </div>
             </div>
             <div class="col">
-              <div class="card">
-                <img src="assets/img/card4.jpg" class="card-img-top" height="200rem" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis non laboriosam itaque laudantium sunt sequi iure, provident deserunt praesentium vitae beatae totam ut distinctio asperiores officiis autem, iusto voluptate doloribus?</p>
+                <div class="card">
+                    <img src="assets/img/card4.jpg" class="card-img-top" height="200rem" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis non
+                            laboriosam itaque laudantium sunt sequi iure, provident deserunt praesentium vitae beatae
+                            totam ut distinctio asperiores officiis autem, iusto voluptate doloribus?</p>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
+        </div>
     </section>
+
+    <!--Contacto-->
+    <section id="contacto">
+        <div class="h1 pt-5 mb-4 text-center">
+            Contacto
+        </div>
+
+        <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
