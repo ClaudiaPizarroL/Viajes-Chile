@@ -26,3 +26,20 @@ form {
     padding-left: 8%;
     padding-right: 8%;
 }
+
+.btn {
+    background-color: #00bfff;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+footer {
+    background-color: #00bfff;
+    color: #ffffff;
+}
+
+.fa-brands {
+    color: #ffffff;
+    font-size: 30px;
+    margin-right: 10px;
+}
