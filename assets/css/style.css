@@ -1,0 +1,21 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.col {
+    font-weight: lighter;
+}
+.col header {
+    background-color: #00bfff;
+}
+
+.col footer {
+    background-color: #00bfff;
+}
+
+#row-cols-1 {
+padding-left: 8%;
+padding-right: 8%;
+}
