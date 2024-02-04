@@ -18,6 +18,7 @@
 </head>
 
 <body>
+    <!--Navbar con atributo sticky para que la barra quede fija en la parte de arriba al hacer scroll-->
     <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary px-5">
         <div class="container-fluid">
             <img src="assets/img/viajes.svg" width="30rem" alt="logo">
@@ -64,13 +65,13 @@
         </div>
     </header>
 
-    <!--Información Quienes Somos, en pantallas sm hacia abajo desaparecera-->
+    <!--Información Quienes Somos, en pantallas sm hacia abajo desaparecera y en pantallas md en adelante se vera-->
     <section class="pt-5 d-none d-sm-none d-md-block bg-black" id="quienes">
         <div class="h1 p-5 pb-5 mb-4 text-center">
             ¿Quienes Somos?
         </div>
 
-        <!--Columnas-->
+        <!--Columnas, uso de container para que use el ancho completo de la pantalla, con eso tambien logramos que el borde sea limitado y no cruce toda la pantalla-->
 
         <div class="container text-center pt-5 border-top">
             <div class="row pt-5 pb-5 align-items-start">
@@ -96,12 +97,12 @@
         </div>
     </section>
 
-    <!--Destacados-->
+    <!--Destacados, uso de container para que use todo el ancho de pantalla, logrando que el borde de abajo quede alineado con los otros bordes de las otras secciones-->
     <section id="destacados">
         <div class="container pt-5 px-5 pb-4 text-center border-bottom">
             <h1>Destacados</h1>
         </div>
-
+<!--Uso de tarjetas de bootstrap-->
         <div class="container-fluid row row-cols-1 row-cols-md-4 g-4 mt-4 pb-5" id="row-cols-1">
             <div class="col">
                 <div class="card">
@@ -151,7 +152,7 @@
         <div class="h1 pt-5 mb-4 text-center">
             Contacto
         </div>
-
+<!--Formulario usando bootstrap, contiene 2 imput y textarea de 5 lineas.-->
         <form class="pb-5">
             <div class="mb-3 border-top">
                 <label for="exampleInputName" class="form-label">Nombre</label>
@@ -165,6 +166,7 @@
                 <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
             </div>
+            <!--Boton con tooltip-->
             <button type="submit" class="btn" data-bs-toggle="tooltip" data-bs-placement="right"
                 data-bs-custom-class="custom-tooltip" data-bs-title="Presiona para enviar a tu mensaje">
                 Enviar</button>
@@ -182,7 +184,6 @@
         </footer>
 
 
-
         <!--Script para conexion con el js de bootstrap-->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -190,6 +191,11 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"></script>
+        <!--Scrip para conexion a jquery-->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/j
+        query.min.js"></script>
 
         <!--Script para conexion con js personalizado de la carpeta assets/js-->
         <script src="/assets/js/script.js"></script>
